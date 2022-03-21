@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Description>web-app-1 project</Description>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SteeltoeVersion>3.1.2</SteeltoeVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Steeltoe.Management.TracingCore" Version="$(SteeltoeVersion)" />
+  </ItemGroup>
+
+</Project>
