@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: web-app-1-steeltoe
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=web-app-1-steeltoe"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: fb-team
