@@ -5,11 +5,12 @@ metadata:
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: web-app-1-steeltoe
+  namespace: dotnet
 spec:
   params:
   - name: annotations
     value:
-      autoscaling.knative.dev/minScale: "1"
+      autoscaling.knative.dev/minScale: "2"
   source:
     git:
       url: https://github.com/fabianbrash/web-app-1-steeltoe
